@@ -347,3 +347,47 @@ input:checked + .slider:before {
 .margin-bottom{
     margin-bottom: 5px;
 }
+
+
+/* ------------------------------floating window----------------------------- */
+/* body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+} */
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+}
+.floating-window {
+    position: absolute;
+    /* bottom: 100px; */
+    top: 72vh;
+
+    left: 50px;
+    z-index: 1000;
+    background-color: red;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
+
+.floating-window-header {
+    background-color: #f1f1f1;
+    /* padding: 10px; */
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+}
+
+.floating-window-title {
+    flex-grow: 1;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+/* .content {
+    padding: 20px;
+} */
