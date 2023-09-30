@@ -1,8 +1,13 @@
+import React, { useState } from 'react';
+
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
+
 import "./VideoReadyPage.css";
+import VideoSent from '../../Components/VideoReadyPage - components/VideoSent';
 
 const VideoReadyPage = () => {
+    const [showModel, setShowModel] = useState(false);
     return (
         <>
             <Header />
@@ -24,7 +29,7 @@ const VideoReadyPage = () => {
                                         <div className="VRP-text-parent">
                                             <div className="VRP-text1"><input type="email" placeholder="enter email of receiver" /></div>
                                             {/* <div className="VRP-button"> */}
-                                            <button className="VRP-button">Send</button>
+                                            <button className="VRP-button" onClick={() => setShowModel(true)}>Send</button>
                                             {/* <div className="VRP-text2">Send</div> */}
                                             {/* <img className="VRP-circle-icon1" alt="" src="copy.svg" /> */}
                                             {/* </div> */}
@@ -124,7 +129,7 @@ const VideoReadyPage = () => {
                                             <img
                                                 className="VRP-arrow-down-icon"
                                                 alt=""
-                                                src="/arrowdown.svg"
+                                                src="/icons/help_assets/arrow-down.png"
                                             />
                                         </div>
                                     </div>
@@ -167,7 +172,7 @@ const VideoReadyPage = () => {
                             To ensure the availability and privacy of your video, we recommend
                             saving it to your account.
                         </div>
-                        <button className=" VRP-frame-wrapper ">Save Video</button>
+                        <button className=" VRP-frame-wrapper " >Save Video</button>
 
                         <div className="VRP-dont-have-an-container">
                             <span>{`Don’t have an account? `}</span>
@@ -175,6 +180,12 @@ const VideoReadyPage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div onClick={event => event.target.className === 'overlay-container' ? setShowModel(false) : null} className="add_pin_modal_container" id='add_pin_modal_container'>
+                {
+                    // showModel ? <Modal add_pin={addPin} /> : null
+                    showModel ? <VideoSent /> : null
+                }
             </div>
             <Footer />
 

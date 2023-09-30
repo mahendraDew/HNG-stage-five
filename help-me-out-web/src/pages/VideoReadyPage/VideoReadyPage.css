@@ -643,6 +643,9 @@
     color: var(--pastel-bg);
     font-family: var(--typography-button-b2);
 }
+.VRP-frame-wrapper:hover{
+    background-color: var(--primary-primary-900);
+}
 
 .VRP-create-account {
     text-decoration: underline;

@@ -4,6 +4,7 @@ import VideoRepository from "./pages/VideoRepositoryPage/VideoRepository"
 import SingleVideoView from "./pages/singleVideoView/SingleVideoView"
 import Login from "./pages/LoginPage/Login"
 import VideoReadyPage from "./pages/VideoReadyPage/VideoReadyPage"
+import VideoSent from "./Components/VideoReadyPage - components/VideoSent"
 
 
 const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route path="/singlevideo" element={<SingleVideoView />} />
       <Route path="/" element={<Login />} />
       <Route path="/ready" element={<VideoReadyPage />} />
+      <Route path="/sent" element={<VideoSent />} />
       
     </Route>
   )

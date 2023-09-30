@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className='lg:px-[100px] py-[12px] shadow sticky top-0 bg-white'>
+    <header className='lg:px-[100px] py-[12px] shadow top-0 bg-white'>
       <nav className="flex items-center justify-between">
         <img src="/images/logo.svg" alt="logo" />
         <div className="flex gap-[39px]">
