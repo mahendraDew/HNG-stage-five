@@ -10,14 +10,15 @@ const Hero = () => {
                   Help your friends and loved ones by creating and sending videos on how to get things done on a website.
               </p>
             </div>
-            <button className="font-work w-[239px] lg:px-[24px] lg:py-[22px] flex items-center gap-[12px] justify-center bg-primary-main rounded-lg text-white">
+            <a className="font-work w-[239px] lg:px-[24px] lg:py-[22px] flex items-center gap-[12px] justify-center bg-primary-main rounded-lg text-white" href="https://github.com/mahendraDew/HNG-stage-five/tree/main/help-me-out-extension">
               Install HelpMeOut
               <BsArrowRight />
-            </button>
+            </a>
         </article>
         <article>
             <img src="images/hero.svg" alt="hero image" />
         </article>
+        {/* <a href=""></a> */}
     </section>
   )
 }

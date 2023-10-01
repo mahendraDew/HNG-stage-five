@@ -7,7 +7,7 @@ const Header = () => {
           <span className='font-work font-medium'>Features</span>
           <span className='font-work font-medium'>How It Works</span>
         </div>
-        <span className="font-sora font-semibold text-[18px] text-primary-main">Get Started</span>
+        <span className="font-sora font-semibold text-[18px] text-primary-main"><a href="/login">Get Started</a></span>
       </nav>
     </header>
   )
