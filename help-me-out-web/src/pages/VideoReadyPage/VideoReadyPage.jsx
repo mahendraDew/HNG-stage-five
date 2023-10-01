@@ -8,12 +8,18 @@ import VideoSent from '../../Components/VideoReadyPage - components/VideoSent';
 
 const VideoReadyPage = () => {
     const [showModel, setShowModel] = useState(false);
+    const [frame, setFrame] = useState(false);
+
     return (
         <>
             <Header />
             <div className="VRP-your-recording-is-ready-1440">
                 <div className="VRP-top-content">
                     <div className="VRP-top">
+                        <div className={frame ? "frame open" : "frame"}>
+                            <div className='close_icon' onClick={() => setFrame(false)}>X</div>
+                            <VideoSent />
+                        </div>
                         <div className="VRP-frame-parent">
                             <div className="VRP-frame-group">
                                 <div className="VRP-your-video-is-ready-parent">

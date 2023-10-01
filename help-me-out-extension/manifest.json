@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut - chrome extension",
+    "description": "Chrome Extension Plugin for Screen Recording and Sharing",
+    "icons": {
+        "512": "assests/icons-pack/android-chrome-512x512.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "512": "assests/icons-pack/android-chrome-512x512.png"
+        }
+
+    },
+
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "version": "1.0.0"
+}

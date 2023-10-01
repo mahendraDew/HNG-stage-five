@@ -15,7 +15,7 @@ const VideoSent = () => {
                 <div className="overlay-parent">
                     <div className="overlay-header">
                         <button onClick={() => setShowModel(false)}>
-                        <img className="close-circle-icon" alt="" src="/icons/help_assets/closecircle.svg" />
+                        <img className="close-circle-icon" alt="" src="/icons/help_assets/close-circle.svg" />
                         </button>
                     </div>
                     <div className="success-kite-1-parent">
