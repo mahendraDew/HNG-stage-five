@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Degraphe Video Recorder</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box">
+
+
+            <div class="header">
+                <div class="heading">
+                    <div class="heading-left-section">
+                        <div class="logo-img">
+                            <img src="assests/icons-pack/android-chrome-512x512.png" alt="logo">
+                        </div>
+                        <div class="logo-heading">
+                            <h1>HelpMeOut</h1>
+                        </div>
+                    </div>
+                    <div class="heading-right-section">
+                        <div class="setting">
+                            <img src="assests/help_assets/setting-2.svg" alt="setting-icon">
+                        </div>
+                        <div class="close-icon">
+                            <button id="closeButton"><img src="assests/help_assets/close-circle.svg" alt="close"></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="description">
+                    <p>This extension helps you record and share help videos with ease.</p>
+                </div>
+            </div>
+            <div class="controller">
+                <div class="window-size">
+                    <div class="window-tab">
+                        <div class="window-icon monitor-window-icon">
+                            <button id="button1" disabled><img
+                                    src="assests/help_assets/monitor-30.png" alt="monitor-window">Full screen</button>
+                        </div>
+
+                        <div class="window-icon current-tab-icon">
+                            <button id="button2" ><img
+                                    src="assests/help_assets/tab.svg" alt="current-tab-icon">Current tab</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="camera-section">
+                    <div class="camera-left">
+                        <div class="camera-icon">
+                            <img src="assests/help_assets/video-camera.svg" alt="camera-icon">
+                        </div>
+                        <div class="camera-name">
+                            Camera
+                        </div>
+                    </div>
+                    <div class="camera-right">
+                        <label class="switch">
+                            <input type="checkbox" id="cameraToggleButton" >
+                            <!-- <input type="checkbox" id="cameraToggleButton" onclick="toggleState()"> -->
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="audio-section">
+                    <div class="audio-left">
+                        <div class="audio-icon">
+                            <img src="assests/help_assets/microphone.svg" alt="camera-icon">
+                        </div>
+                        <div class="audio-name">
+                            Audio
+                        </div>
+                    </div>
+                    <div class="camera-right">
+                        <label class="switch">
+                            <input type="checkbox" id="audioToggleButton" >
+                            <!-- <input type="checkbox" id="audioToggleButton" onclick="toggleState()"> -->
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="start-recording-btn">
+                    <!-- <button id="startRecording" class="startStopButton"  onclick="toggleStartStopBtn('startRecBtn')">Start Recording</button>
+                    <button id="stopRecording" class="startStopButton"  onclick="toggleStartStopBtn('stopRecBtn')" disabled>Stop Recording</button> -->
+                    <button id="startRecording" class="startStopButton" >Start Recording</button>
+                    <button id="stopRecording" class="startStopButton"   disabled>Stop Recording</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- <div class="content">
+        <h2>TAKE VIDEO</h2>
+
+        <div class="button_cont">
+            <button id="start_video">START VIDEO</button>
+        </div>
+        <br>
+        <div class="button_cont">
+            <button id="stop_video">STOP VIDEO</button>
+        </div>
+
+    </div> -->
+
+    <script src="./js/popup.js"></script>
+
+</body>
+</html>
