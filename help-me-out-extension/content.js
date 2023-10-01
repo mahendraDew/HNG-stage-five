@@ -1,4 +1,4 @@
-console.log("contentjs file have been injected !!!")
+console.log(" this is contentjs file that have been injected !!!")
 
 var recorder = null
 function onAccessApproved(stream) {
@@ -22,7 +22,7 @@ function onAccessApproved(stream) {
 
         if (event.data.size > 0) {
             console.log("inside event size");
-            if (event.data.type === 'video/x-matroska;codecs=avc1') {
+            if (event.data.type.startsWith("video")) {
                 console.log("inside type condition")
                 videoChunks.push(event.data);
                 console.log("eventdata:", event.data);
